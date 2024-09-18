@@ -1,0 +1,232 @@
+{
+	"id": "9a337b20-f1a3-448b-a939-8566bd4ad6d7",
+	"name": "TheCatAPI test",
+	"timestamp": "2024-06-27T11:44:48.711Z",
+	"collection_id": "21648690-8c757811-d862-4d9e-9db2-1ecc4f8cee83",
+	"folder_id": 0,
+	"environment_id": "21648690-3d5c5258-9218-40c8-a201-e9626b835658",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-27T11:44:44.410Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bb0e542e-bcde-4479-b6e9-f7f2100af290",
+			"name": "Get 10 bengal images",
+			"url": "https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_KNOpEY8nOEgP4N0vu8ryngp12Y30asCER9C5QH1RDLcmMFY8345nxNA7YTWkbvFL",
+			"time": 1492,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1492
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "eab1f4c6-55c2-47c3-b85d-8d47570f1b5c",
+			"name": "Get 1 bengal image",
+			"url": "https://api.thecatapi.com/v1/images/search?limit=1&breed_ids=beng&api_key=live_KNOpEY8nOEgP4N0vu8ryngp12Y30asCER9C5QH1RDLcmMFY8345nxNA7YTWkbvFL",
+			"time": 463,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				463
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "cad8d798-044a-4b7b-b07a-7159b96b8c72",
+			"name": "create a favourites",
+			"url": "https://api.thecatapi.com/v1/favourites",
+			"time": 489,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check message": true,
+				"Response contains id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				489
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check message": true,
+					"Response contains id": true
+				}
+			]
+		},
+		{
+			"id": "ae63e835-bb34-409f-984d-98687f6627b7",
+			"name": "delete favourites",
+			"url": "https://api.thecatapi.com/v1/favourites/232473303",
+			"time": 353,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Favourite successfully deleted": true
+			},
+			"testPassFailCounts": {
+				"Favourite successfully deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				353
+			],
+			"allTests": [
+				{
+					"Favourite successfully deleted": true
+				}
+			]
+		},
+		{
+			"id": "0e263cdf-9689-49f5-a334-6935fd65b864",
+			"name": "Add vote",
+			"url": "https://api.thecatapi.com/v1/votes",
+			"time": 531,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response contains id": true
+			},
+			"testPassFailCounts": {
+				"Response contains id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				531
+			],
+			"allTests": [
+				{
+					"Response contains id": true
+				}
+			]
+		},
+		{
+			"id": "1b285b1c-c40c-490c-bfbf-677c04980114",
+			"name": "delete votes",
+			"url": "https://api.thecatapi.com/v1/votes/1195947",
+			"time": 388,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Vote successfully deleted": true
+			},
+			"testPassFailCounts": {
+				"Vote successfully deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				388
+			],
+			"allTests": [
+				{
+					"Vote successfully deleted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3716,
+	"collection": {
+		"requests": [
+			{
+				"id": "bb0e542e-bcde-4479-b6e9-f7f2100af290",
+				"method": "GET"
+			},
+			{
+				"id": "eab1f4c6-55c2-47c3-b85d-8d47570f1b5c",
+				"method": "GET"
+			},
+			{
+				"id": "cad8d798-044a-4b7b-b07a-7159b96b8c72",
+				"method": "POST"
+			},
+			{
+				"id": "ae63e835-bb34-409f-984d-98687f6627b7",
+				"method": "DELETE"
+			},
+			{
+				"id": "0e263cdf-9689-49f5-a334-6935fd65b864",
+				"method": "POST"
+			},
+			{
+				"id": "1b285b1c-c40c-490c-bfbf-677c04980114",
+				"method": "DELETE"
+			}
+		]
+	}
+}
